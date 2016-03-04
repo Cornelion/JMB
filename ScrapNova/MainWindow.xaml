@@ -1,0 +1,18 @@
+﻿<Window x:Class="ScrapNova.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScrapNova"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1300">
+    <Grid>
+        <DataGrid Name="thegrid" Width="600" Height="400" HorizontalAlignment="Left" VerticalAlignment="Top" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date"  Binding="{Binding Date}"/>
+                <DataGridTextColumn Header="Heure" Binding="{Binding Heure}"/>
+                <DataGridTextColumn Header="Titre" Binding="{Binding Titre}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
