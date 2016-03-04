@@ -28,6 +28,7 @@ namespace ScrapNova
 
             //evenements.Add(new Evenement() { Date = "25-01", Heure = "20h", Titre = "super-film", Description = "un très super film" });
             //evenements.Add(new Evenement() { Date = "26-01", Heure = "20h", Titre = "film naze", Description = "ne venez pas" });
+
             XElement x = XElement.Load("http://www.nova-cinema.org/seances");
             
             thegrid.ItemsSource = evenements;
