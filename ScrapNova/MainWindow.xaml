@@ -9,17 +9,19 @@
     <ScrollViewer >
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <!--<ColumnDefinition></ColumnDefinition>-->
         </Grid.ColumnDefinitions>
-        <DataGrid Name="thegrid" Width="100" Height="400" HorizontalAlignment="Left" VerticalAlignment="Top" AutoGenerateColumns="False">
+        <DataGrid Name="thegrid"  Height="auto" HorizontalAlignment="Left" VerticalAlignment="Top" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Date"  Binding="{Binding Date}"/>
+                <DataGridTextColumn Width="auto" Header="Date"  Binding="{Binding Date}"/>
                 <DataGridTextColumn Header="Heure" Binding="{Binding Heure}"/>
                 <DataGridTextColumn Header="Titre" Binding="{Binding Titre}"/>
-            </DataGrid.Columns>
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}"/>
+
+                </DataGrid.Columns>
         </DataGrid>
-        <TextBox Name="texttest" Grid.Column="1"></TextBox>
+        <!--<TextBox Name="texttest" Grid.Column="1"></TextBox>-->
     </Grid>
     </ScrollViewer>
 </Window>
